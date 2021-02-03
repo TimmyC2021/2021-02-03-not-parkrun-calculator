@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat,  sans-serif;
+    background-color: burlywood;
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+    margin: 20px;
+}
+
+h1, h2, h3, h4 {
+    margin: 20px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.list {
+    text-align: left;
+    margin-left: 30vw;
+}
+
+#btCalculate {
+    margin-left: 48vw;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: chartreuse;
+}
+#inputs {
+    display: grid;
+    margin-left: 40vw;
+    grid-template-columns: 200px 50px;
+}
+
+#output {
+    text-align: center;
+}
+
+#inputs input {
+    padding: 5px;
+    width: 50px;
+}
+
+#result {
+    width: 150px;
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    background-color: cyan;
+}

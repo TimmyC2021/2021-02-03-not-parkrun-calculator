@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>(not) parkrun time</title>
+</head>
+<body>
+    <header>
+        <h1><a href="https://www.parkrun.org.uk/notparkrun/">(not) parkrun</a></h1>
+        <h4>Yes, the lowercase is intentional</h2>
+        <div class="list">
+
+            <p><strong>5k (not) parkrun time calculator</strong></p>
+            <p>If you run further than 5k (3.125 miles) then you can input your </p>
+            <ul>
+                <li>Distance (in miles)</li>
+                <li>Time in Minutes</li>
+                <li>and seconds</li>
+            </ul>
+        </div>
+        <p>Then the calculator will give you a time for running 5k</p> 
+    </header>
+    <main>
+        <div id="inputs">
+            <span><label for="distance">Distance (miles)</label></span>
+            <span><input id="distance" type="text" name="distance" ></span>
+            <span><label for="minutes">Minutes</label></span>
+            <span><input id="minutes" type="text" name="minutes"></span>
+            <span><label for="seconds">Seconds</label></span>
+            <span><input id="seconds" type="text" name="seconds"></span>
+        </div>
+        <br>
+        <button id="btCalculate" onclick="calculateTime(event)">Hit Me</button>
+        <br>
+        <br>
+        <span id="output">
+            <p>Your time is:   <span id="result">   Waiting for result</span></p>
+        </span>
+        <br>
+        <br>
+        <br>
+        <span id="debug">
+            <p>Debug output</p>
+            <p id="dbValue1">Waiting for result</p>
+            <p id="dbValue2">Waiting for result</p>
+            <p id="dbValue3">Waiting for result</p>
+            <p id="dbValue4">Waiting for result</p>
+            <!--
+            <p id="result">Waiting for result</p>
+            <p id="result">Waiting for result</p>
+        -->
+        </span>
+    </main>
+</body>
+</html>
